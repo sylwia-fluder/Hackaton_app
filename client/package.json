@@ -1,7 +1,10 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
@@ -19,9 +22,8 @@
     "shortid": "^2.2.15",
     "yup": "^0.27.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,8 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "redux-devtools": "^3.5.0"
   }
 }
