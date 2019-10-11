@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 const cors = require('cors');
 const app = express();
-require('dotenv').config();
+
+dotenv.config({ path: './config/.env.local' });
 
 app.use(
   cors({
